@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="photo_module" lang="en">
+<head>
+	<title>Sruthi Pujara Photography</title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+</head>
+<body>
+	<div class="container">
+		<h1>Sruthi Pujara Photography</h1>
+		<div class="row">
+
+		<!-- Centered Tabs -->
+			<ul class="nav nav-bars nav-justified">
+				<li class="active"><a data-toggle="tab" href="#home_p">HOME</a></li>
+				<li><a data-toggle="tab" href="#nature_p">NATURE</a></li>
+				<li><a data-toggle="tab" href="#cities_p">CITIES</a></li>
+				<li><a data-toggle="tab" href="#weddings_p">WEDDINGS</a></li>
+				<li><a data-toggle="tab" href="#contact_p">CONTACT</a></li>
+				<li><a data-toggle="tab" href="#about_p">ABOUT</a></li>
+			</ul>
+		</div>
+		<div class="tab-content">
+			<div id="home_p" class="tab-pane fade in active">
+				<br />
+				<img class="img-responsive" src="images/homepage_pic.jpg">
+				<br />
+			</div>
+			<div ng-controller="NatureController as nature" id="nature_p" class="tab-pane fade">
+				<div ng-repeat="item in nature.items" id='nat'>
+					<br />
+					<p> {{item.description}} </p>
+					<img class="img-responsive" ng-src="{{item.image}}" />
+					<br/>
+				</div>
+			</div>
+			<div ng-controller="CitiesController as cities" id="cities_p" class="tab-pane fade">
+				<div ng-repeat="item in cities.items">
+					<br />
+					<p> {{item.description}} </p>
+					<img class="img-responsive" ng-src="{{item.image}}" />
+					<br/>
+				</div>
+			</div>
+			<div ng-controller="WeddingsController as weddings" id="weddings_p" class="tab-pane fade">
+				<div ng-repeat="item in weddings.items">
+					<br />
+					<p> {{item.description}} </p>
+					<img class="img-responsive" ng-src="{{item.image}}" />
+					<br/>
+				</div>
+			</div>
+			<div id="contact_p" class="tab-pane fade">
+				<p>Contact.</p>
+			</div>
+			<div id="about_p" class="tab-pane fade">
+				<p>About.</p>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- jQuery and JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- AngularJS -->	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

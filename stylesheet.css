@@ -1,0 +1,33 @@
+body {
+    font-family: Garamond;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-style: oblique;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #fff;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #fff;
+    color: #555;
+}
+
+/*#nat{
+    border: 1px solid red;
+}*/

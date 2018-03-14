@@ -62,13 +62,6 @@
 			description: 'Reaction and expressions of a bride after her makeup artist has worked her magic on her.',
 			image: 'images/weddings/makeup_pic.jpg',
 		}
-
 	];
 
 })();
-
-// Template to copy
-		// {
-		// 	description: '',
-		// 	image: '',
-		// },

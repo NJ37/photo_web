@@ -36,34 +36,52 @@
 				<br />
 			</div>
 			<div ng-controller="NatureController as nature" id="nature_p" class="tab-pane fade">
-				<div ng-repeat="item in nature.items" id='nat'>
+				<div ng-repeat="item in nature.items">
 					<br />
-					<p> {{item.description}} </p>
-					<img class="img-responsive" ng-src="{{item.image}}" />
-					<br/>
+					<figure>
+						<figcaption> {{item.description}} </figcaption>
+						<img class="img-responsive" ng-src="{{item.image}}" />
+					</figure>
+					<br />
 				</div>
 			</div>
 			<div ng-controller="CitiesController as cities" id="cities_p" class="tab-pane fade">
 				<div ng-repeat="item in cities.items">
 					<br />
-					<p> {{item.description}} </p>
-					<img class="img-responsive" ng-src="{{item.image}}" />
-					<br/>
+					<figure>
+						<figcaption> {{item.description}} </figcaption>
+						<img class="img-responsive" ng-src="{{item.image}}" />
+					</figure>
+					<br />
 				</div>
 			</div>
 			<div ng-controller="WeddingsController as weddings" id="weddings_p" class="tab-pane fade">
 				<div ng-repeat="item in weddings.items">
 					<br />
-					<p> {{item.description}} </p>
-					<img class="img-responsive" ng-src="{{item.image}}" />
-					<br/>
+					<figure>
+						<figcaption> {{item.description}} </figcaption>
+						<img class="img-responsive" ng-src="{{item.image}}" />
+					</figure>
+					<br />
 				</div>
 			</div>
 			<div id="contact_p" class="tab-pane fade">
-				<p>Contact.</p>
+				<br />
+				<br />
+				<p><b>Contact for business enquiries:</b> emailID goes here</p>
+				<br />
+				<p>And probably some more important stuff.</p>
+				<p>I'm thinking we can have a form here for submitting comments..</p>
+				<br />
+				<br />
+				<p>And at the last, your Insta profile handle and blog maybe?</p>
 			</div>
 			<div id="about_p" class="tab-pane fade">
-				<p>About.</p>
+				<br />
+				<br />
+				<p>Sruthi Pujara is a Melbourne-based photographer. Her subjects span nature, cities, people and culture. She does wedding photography on request too.</p>
+				<br />
+				<p style="font-style: italic;">"I like to see things in a different light and the world in a different perspective. It's not about what you see, it's all about how you see. I've always dreamed of showing the world through my eyes, and now this passion of mine has brought forth an opportunity to do that."</p>
 			</div>
 		</div>
 

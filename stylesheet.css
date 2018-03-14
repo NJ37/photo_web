@@ -24,10 +24,34 @@ li a {
 
 /* Change the link color on hover */
 li a:hover {
-    background-color: #fff;
     color: #555;
 }
 
-/*#nat{
-    border: 1px solid red;
-}*/
+figure {
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ccc; 
+    border: 1px dotted gray;
+}
+
+figure img {
+    display: block;
+    margin: auto;
+    vertical-align: top;
+}
+
+figure figcaption {
+    display: table-caption;
+    border: 1px dotted gray;
+    color: #fff;
+    background-color: #555;
+    font-style: oblique;
+    text-align: center;
+    padding: 5px;
+}
+
+.tab-content {
+    text-align: center;
+}
